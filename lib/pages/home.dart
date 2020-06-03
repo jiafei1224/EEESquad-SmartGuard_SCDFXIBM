@@ -59,7 +59,7 @@ class _HomeState extends State<Home> {
               ),
               icon: Icon(Icons. people_outline,color: Colors.white,),
               onPressed: () {
-
+                Navigator.pushNamed(context, '/helpneighbour');
               },
             ),
 
