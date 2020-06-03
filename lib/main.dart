@@ -6,7 +6,7 @@ import 'package:myapp/pages/sign.dart';
 import 'package:myapp/pages/helpsingapore.dart';
 import 'package:myapp/pages/helplist.dart';
 import 'package:myapp/pages/outputpage.dart';
-
+import 'package:myapp/pages/helpNeighbour.dart';
 
 
 void main() => runApp(MaterialApp(
@@ -19,8 +19,7 @@ void main() => runApp(MaterialApp(
     '/helplist': (context) => Helplist(),
     '/helpsing': (context) => Helpsg(),
     '/out': (context) => Output(),
-
-
+    '/helpneighbour': (context) => HelpNeighbour()
 
   },
 
