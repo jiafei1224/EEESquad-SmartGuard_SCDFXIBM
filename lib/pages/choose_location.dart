@@ -24,7 +24,8 @@ class _ChooseLocationState extends State<ChooseLocation> {
           children: <Widget>[
         Container(
         width: MediaQuery.of(context).size.width,
-        height: 330,
+        height: 310,
+
         decoration: BoxDecoration(
           image: DecorationImage(
               fit: BoxFit.fill,
@@ -33,6 +34,7 @@ class _ChooseLocationState extends State<ChooseLocation> {
         ),
       ),
         Container(
+          padding:EdgeInsets.all(5.0),
           child: TextField(
               obscureText: false,
 
@@ -44,6 +46,7 @@ class _ChooseLocationState extends State<ChooseLocation> {
         ),
         ),
             Container(
+              padding:EdgeInsets.all(5.0),
               child: TextField(
                 obscureText: true,
 
@@ -69,18 +72,61 @@ class _ChooseLocationState extends State<ChooseLocation> {
               ),
 
             ),
-        ],
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 1),
+              padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    color: Color(0xff2872ba),
+                    borderRadius: BorderRadius.only(
+                    bottomRight: Radius.circular(5),
+                    topRight: Radius.circular(5)),
+                ),
+                alignment: Alignment.center,
+                child: Text('Log in with Facebook',
+                    style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w400)),
+                ),
+
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 5),
+              padding: EdgeInsets.all(15),
+              alignment: Alignment.bottomCenter,
+              child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                  Text(
+                      '         Don\'t have an account ?',
+                      style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
+                  ),
+                  SizedBox(
+                      width: 10,
+                  ),
+                  Text(
+                      '',
+                      style: TextStyle(
+                      color: Color(0xfff79c4f),
+                      fontSize: 13,
+                      fontWeight: FontWeight.w600),
+
+                )
+            ],
+          ),
+        ),
+      ],
       ),
 
 
         floatingActionButton: FlatButton.icon(
           onPressed: () {
+            Navigator.pushNamed(context, '/sign');
 
           },
-          icon: Icon(Icons.person_outline,color: Colors.red,size: 30,),
+          icon: Icon(Icons.person_outline,color: Colors.red,size: 25,),
           color: Colors.white30,
 
-          label: Text('Sign Up',style: TextStyle(fontSize: 15,letterSpacing: 0.5,color: Colors.red,)),
+          label: Text('Register',style: TextStyle(fontSize: 15,letterSpacing: 0.5,color: Colors.red,)),
         )
     );
   }

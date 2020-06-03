@@ -9,6 +9,7 @@ class _LoadingState extends State<Loading> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
 
       appBar: AppBar(
         title: Text(' Help Lah!',style: TextStyle(fontSize: 30,
@@ -33,7 +34,7 @@ class _LoadingState extends State<Loading> {
             ),
             Container(
               padding: EdgeInsets.all(20.0),
-              color: Colors.white30,
+              color: Colors.grey[50],
               child: Text('The COVID 3-In-1 App',textAlign: TextAlign.center,style:
               TextStyle(fontSize: 25.0,
                   letterSpacing: 1.0,
@@ -46,7 +47,7 @@ class _LoadingState extends State<Loading> {
               decoration: BoxDecoration(
                 image: DecorationImage(
 
-                    image: AssetImage('assets/va.gif')
+                    image: AssetImage('assets/aa.gif')
                 ),
               ),
             ),

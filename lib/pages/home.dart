@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -41,7 +42,10 @@ class _HomeState extends State<Home> {
                 child: Text('HELP YOURSELF ( Covid Checklist)                ',style: TextStyle(fontSize: 15,color: Colors.white),),
               ),
               icon: Icon(Icons. playlist_add_check,color: Colors.white,),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/helplist');
+
+              },
             ),
 
           ),
@@ -54,7 +58,9 @@ class _HomeState extends State<Home> {
                 child: Text('HELP YOUR NEIGHBOR ( Voluntary Task )      ',style: TextStyle(fontSize: 15,color: Colors.white),),
               ),
               icon: Icon(Icons. people_outline,color: Colors.white,),
-              onPressed: () {},
+              onPressed: () {
+
+              },
             ),
 
           ),
@@ -67,7 +73,9 @@ class _HomeState extends State<Home> {
                 child: Text('HELP SINGAPORE (Covid Hotspot & Tracing)',style: TextStyle(fontSize: 15,color: Colors.white),),
               ),
               icon: Icon(Icons. wifi_tethering,color: Colors.white,),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/helpsing');
+              },
             ),
 
           ),
