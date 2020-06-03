@@ -177,7 +177,7 @@ class _HelplistState extends State<Helplist> {
             Container(
 
               child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -214,7 +214,7 @@ class _HelplistState extends State<Helplist> {
                       ],
                     ),
                     Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
                         Padding(
                           padding: EdgeInsets.all(6.0),
@@ -237,7 +237,7 @@ class _HelplistState extends State<Helplist> {
             Container(
 
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -297,7 +297,7 @@ class _HelplistState extends State<Helplist> {
             Container(
 
               child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
 
                     Column(

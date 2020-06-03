@@ -44,7 +44,7 @@ class DemoPage extends StatelessWidget {
             children: <Widget>[
               Container(
                 width: MediaQuery.of(context).size.width,
-                height: 280,
+                height: 300,
                 decoration: BoxDecoration(
                   image: DecorationImage(
                       fit: BoxFit.fill,

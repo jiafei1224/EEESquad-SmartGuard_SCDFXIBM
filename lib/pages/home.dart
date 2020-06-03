@@ -70,7 +70,7 @@ class _HomeState extends State<Home> {
             child: FlatButton.icon(
               label: Container(
 
-                child: Text('HELP SINGAPORE (Covid Hotspot & Tracing)',style: TextStyle(fontSize: 15,color: Colors.white),),
+                child: Text('HELP SINGAPORE (Covid Hotspot&Trace)',style: TextStyle(fontSize: 15,color: Colors.white),),
               ),
               icon: Icon(Icons. wifi_tethering,color: Colors.white,),
               onPressed: () {
