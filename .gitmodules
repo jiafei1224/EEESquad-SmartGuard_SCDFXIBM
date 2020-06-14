@@ -1,0 +1,3 @@
+[submodule "weather-anomaly"]
+	path = weather-anomaly
+	url = https://github.com/adiser/weather-anomaly
