@@ -8,7 +8,7 @@ This aim of this application is to facilitate the flow of valuable information b
 
 Youtube pitch for SmartGuard:
 
-Live Demo video for the SmartGuard application: 
+Live Demo video for the SmartGuard application: https://www.youtube.com/watch?v=1Ymmxh6YF3k&feature=youtu.be
 
 
 
