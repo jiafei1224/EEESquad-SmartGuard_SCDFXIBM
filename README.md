@@ -21,7 +21,9 @@ Alternativly you can download the *app-release.apk* and install it into your mob
 
 They are two submodule consisting of the code for anomly detection and fire detection alogrithms. Please click on it to access that code.
 -Fire_Image_Classifier @d10a95b
+
 -weather-anomaly @13cd811
+
 All ML model has be implemented into the flutter application. 
 
 
