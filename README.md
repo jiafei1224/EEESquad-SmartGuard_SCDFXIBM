@@ -1,16 +1,16 @@
 # SmartGuard
 
+Problem statement:
+Infrastructure is getting “smart”, with sensors and Internet of things (IoT) increasingly embedded in the built environment (e.g. Punggol Digital District). How might we leverage a network of smart infrastructure in the built environment to make better and more timely sense of emergency incidents (e.g. detection of fires developing, building collapses, falls, road traffic accidents etc.) and trigger early intervention measures, without the need to activate precious emergency resources?
+
+Our solution: SmartGuard is an all in one cloud-based AI-driven mobile application that takes data collected from sensors and IoT embedded in our community together with public reporting to predicting anomaly or potential hazard within the community. This is achieved using our state-of-the-art Machine learning algorithms to do fire and anomaly detection via public accessible data such as https://data.gov.sg/.
+This aim of this application is to facilitate the flow of valuable information between users to ensure that everyone is alert about potential hazard near them and hence allowing them to carry out early-stage interventions and as result prevent wastage of emergency resource.
+
 
 
 ## Getting Started
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Load the flutter file into your SDK, set up emulator Nexus 6 with Pie OS for ideal virtual device. 
+Alternativly you can download the *app-release.apk* and install it into your mobile application for testing.
