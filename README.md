@@ -17,6 +17,7 @@ Live Demo video for the SmartGuard application:
 This project is a starting point for a Flutter application.
 
 Load the flutter file into your SDK, set up emulator Nexus 6 with Pie OS for ideal virtual device. 
+
 Alternativly you can download the *app-release.apk* and install it into your mobile application for testing.
 
 They are two submodule consisting of the code for anomly detection and fire detection alogrithms. Please click on it to access that code.
