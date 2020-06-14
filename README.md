@@ -6,6 +6,15 @@ Infrastructure is getting “smart”, with sensors and Internet of things (IoT)
 Our solution: SmartGuard is an all in one cloud-based AI-driven mobile application that takes data collected from sensors and IoT embedded in our community together with public reporting to predicting anomaly or potential hazard within the community. This is achieved using our state-of-the-art Machine learning algorithms to do fire and anomaly detection via public accessible data such as https://data.gov.sg/.
 This aim of this application is to facilitate the flow of valuable information between users to ensure that everyone is alert about potential hazard near them and hence allowing them to carry out early-stage interventions and as result prevent wastage of emergency resource.
 
+<User manual>
+  -Anyone can download and login in the SmartGuard mobile application using their SingPass.
+  
+  -Public data collected about the weather and temperature will be used to train the anomaly detection model to predict potential threat that might be caused as a result of harsh weather condition such as tree family and even fire. This will alert the user to take necessary action to avoid or prevent it. 
+  
+  -Public reporting is also key for mass sharing of data and incident report on potential hazards. User can report and upload images on potential hazard, fire or threats near them to alert others that are on this application to stay alert too. The computer vision model built in the application will also be able to detect on deep reporting of the incident via its fire and smoke classifier. 
+  
+  
+
 Youtube pitch for SmartGuard:
 
 Live Demo video for the SmartGuard application: https://www.youtube.com/watch?v=1Ymmxh6YF3k&feature=youtu.be
