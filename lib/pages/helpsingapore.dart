@@ -28,7 +28,7 @@ class DemoPage extends StatelessWidget {
     launch('https://www.scdf.gov.sg/');
   }
   launchURL2() {
-    launch('https://www.scdf.gov.sg/home/contact-info');
+    launch('https://weather-anomaly.herokuapp.com/getmsg/?air_temperature=4000');
   }
   launchURL3() {
     launch('http://www.weather.gov.sg/weather-rain-area-50km');
@@ -106,9 +106,9 @@ class DemoPage extends StatelessWidget {
                 child: FlatButton.icon(
                   label: Container(
 
-                    child: Text('Contact us',style: TextStyle(fontSize: 20,color: Colors.white),),
+                    child: Text('Anomaly Detection',style: TextStyle(fontSize: 20,color: Colors.white),),
                   ),
-                  icon: Icon(Icons.call_end ,color: Colors.white,),
+                  icon: Icon(Icons.developer_mode ,color: Colors.white,),
                   onPressed: launchURL2,
                 ),
 
