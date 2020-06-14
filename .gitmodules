@@ -1,3 +1,6 @@
 [submodule "weather-anomaly"]
 	path = weather-anomaly
 	url = https://github.com/adiser/weather-anomaly
+[submodule "Fire_Image_Classifier"]
+	path = Fire_Image_Classifier
+	url = https://github.com/cloudtenno/Fire_Image_Classifier
