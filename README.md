@@ -20,6 +20,7 @@ Load the flutter file into your SDK, set up emulator Nexus 6 with Pie OS for ide
 Alternativly you can download the *app-release.apk* and install it into your mobile application for testing.
 
 They are two submodule consisting of the code for anomly detection and fire detection alogrithms. Please click on it to access that code.
+
 -Fire_Image_Classifier @d10a95b
 
 -weather-anomaly @13cd811
