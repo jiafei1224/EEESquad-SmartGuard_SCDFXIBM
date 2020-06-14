@@ -10,6 +10,8 @@ Youtube pitch for SmartGuard:
 
 Live Demo video for the SmartGuard application: https://www.youtube.com/watch?v=1Ymmxh6YF3k&feature=youtu.be
 
+Link to download SmartGuard app: https://drive.google.com/file/d/1dMdrhrmIjKu9gJbgrAMLKwUJNwjzxwdd/view?usp=sharing
+
 
 
 ## Getting Started
