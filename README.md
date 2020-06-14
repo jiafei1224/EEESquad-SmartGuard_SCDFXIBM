@@ -39,9 +39,17 @@ They are two submodule consisting of the code for anomly detection and fire dete
 
 All ML model has be implemented into the flutter application. 
 
-Fire_Image_Classifier
+<Fire_Image_Classifier>
 This is an image classifier model that categorize the image into 3 categories: Fire, Smoke and Normal. Its trained with more than three thousand images and using IBM Cloud Annotation image classifier which employ TensorFlow.
 
 The model will also provide a confidence score for each category with a high accuracy.
 
 Refer to training-log.txt for full training detail.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+<Weather-anomly detector>
+Model Specification:
+
+The model is trained on temperature readings across Singapore from 2017 to 2020, utilizing the data.gov.sg API. The model utilizes an unsupervised learning method called anomaly detection. Where extreme outliers are detected to generate early alarms of a potential environmental hazard. The model can detect environmental hazards such as wildfires, flashfloods that may impede Singapore's integrity as a sovereign nation. 
+
+By taking into account 5 different modalities of weather readings which are: air temperature, rainfall, relative humidity, wind speed, wind direction. The model process this signals and warns users and SCDF lifesavers to act quickly to avoid potentially hazardous events. The model's performance is stress tested by looking at its performance across different environmental events such as the recent haze, the 2018 flash floods, and benchmarking it with the temperature readings in Australia in the recent wildfire and our model can achieve a reasonably low false positive rate
