@@ -1,18 +1,25 @@
 import 'package:flutter/material.dart';
 
+
+
+
 class ChooseLocation extends StatefulWidget {
   @override
   _ChooseLocationState createState() => _ChooseLocationState();
 }
 
+
+
 class _ChooseLocationState extends State<ChooseLocation> {
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.red,
-        title: Text(' Help Lah!',style: TextStyle(fontSize: 30,
+        title: Text(' SmartGuard',style: TextStyle(fontSize: 30,
             fontFamily: 'ChelseaMarkeet'
         ),),
         centerTitle: true,
@@ -29,7 +36,7 @@ class _ChooseLocationState extends State<ChooseLocation> {
         decoration: BoxDecoration(
           image: DecorationImage(
               fit: BoxFit.fill,
-              image: AssetImage('assets/logo.PNG')
+              image: AssetImage('assets/smartguard.PNG')
           ),
         ),
       ),
@@ -63,9 +70,10 @@ class _ChooseLocationState extends State<ChooseLocation> {
               child: FlatButton.icon(
                 label: Container(
 
+
                   child: Text('Login In',style: TextStyle(fontSize: 25,color: Colors.red),),
                 ),
-                icon: Icon(Icons. wifi_tethering,color: Colors.red,size: 35,),
+                icon: Icon(Icons. label_important,color: Colors.red,size: 35,),
                 onPressed: () {
                   Navigator.pushNamed(context, '/home');
                 },
@@ -73,21 +81,19 @@ class _ChooseLocationState extends State<ChooseLocation> {
 
             ),
             Container(
-              margin: EdgeInsets.symmetric(vertical: 1),
-              padding: EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                    color: Color(0xff2872ba),
-                    borderRadius: BorderRadius.only(
-                    bottomRight: Radius.circular(5),
-                    topRight: Radius.circular(5)),
+              color: Colors.red[400],
+              padding:EdgeInsets.all(0.2),
+              child: FlatButton.icon(
+                label: Container(
+
+                  child: Text('Sign up with SingPass',style: TextStyle(fontSize: 16,color: Colors.white),),
                 ),
-                alignment: Alignment.center,
-                child: Text('Log in with Facebook',
-                    style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                    fontWeight: FontWeight.w400)),
-                ),
+                icon: Icon(Icons. people_outline,color: Colors.white,),
+                onPressed: (){},
+              ),
+
+            ),
+
 
             Container(
               margin: EdgeInsets.symmetric(vertical: 5),
@@ -118,16 +124,6 @@ class _ChooseLocationState extends State<ChooseLocation> {
       ),
 
 
-        floatingActionButton: FlatButton.icon(
-          onPressed: () {
-            Navigator.pushNamed(context, '/sign');
-
-          },
-          icon: Icon(Icons.person_outline,color: Colors.red,size: 25,),
-          color: Colors.white30,
-
-          label: Text('Register',style: TextStyle(fontSize: 15,letterSpacing: 0.5,color: Colors.red,)),
-        )
     );
   }
 }

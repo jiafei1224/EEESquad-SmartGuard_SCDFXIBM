@@ -9,14 +9,14 @@ class _LoadingState extends State<Loading> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
 
       appBar: AppBar(
-        title: Text(' Help Lah!',style: TextStyle(fontSize: 30,
+        title: Text('  SmartGuard',style: TextStyle(fontSize: 30,
           fontFamily: 'ChelseaMarkeet'
         ),),
         centerTitle: true,
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.red[700],
       ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -24,33 +24,25 @@ class _LoadingState extends State<Loading> {
           children: <Widget>[
             Container(
               width: MediaQuery.of(context).size.width,
-              height: 350,
+              height: 400,
               decoration: BoxDecoration(
                 image: DecorationImage(
                     fit: BoxFit.fill,
-                    image: AssetImage('assets/avc.gif')
+                    image: AssetImage('assets/loading.gif')
                 ),
               ),
             ),
-            Container(
-              padding: EdgeInsets.all(20.0),
-              color: Colors.grey[50],
-              child: Text('The COVID 3-In-1 App',textAlign: TextAlign.center,style:
-              TextStyle(fontSize: 25.0,
-                  letterSpacing: 1.0,
-                  color: Colors.red,
-                  fontFamily: 'ChelseaMarkeet'
-              ),),),
             Container(
               width: MediaQuery.of(context).size.width,
               height: 100,
               decoration: BoxDecoration(
                 image: DecorationImage(
 
-                    image: AssetImage('assets/aa.gif')
+                    image: AssetImage('assets/title.PNG')
                 ),
               ),
             ),
+
           ],
         ),
 
@@ -61,10 +53,10 @@ class _LoadingState extends State<Loading> {
         onPressed: () {
           Navigator.pushNamed(context, '/location');
         },
-        icon: Icon(Icons.play_arrow,color: Colors.red,size: 30,),
-        color: Colors.white30,
+        icon: Icon(Icons.play_arrow,color: Colors.white,size: 30,),
+        color: Colors.black,
 
-        label: Text('Start',style: TextStyle(fontSize: 19,letterSpacing: 2.0,color: Colors.red,fontFamily: 'ChelseaMarkeet',)),
+        label: Text('Start',style: TextStyle(fontSize: 19,letterSpacing: 2.0,color: Colors.white,fontFamily: 'ChelseaMarkeet',)),
       )
 
 

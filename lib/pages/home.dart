@@ -1,84 +1,218 @@
 import 'package:flutter/material.dart';
 
 
+
+
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
 }
+showAlertDialog(BuildContext context) {
 
+  // set up the buttons
+  Widget cancelButton = FlatButton(
+    child: Text("Noted"),
+    onPressed:  () {Navigator.pushNamed(context, '/home');},
+  );
+  Widget continueButton = FlatButton(
+    child: Text("Find out more"),
+    onPressed:  () { },
+  );
+
+  // set up the AlertDialog
+  AlertDialog alert = AlertDialog(
+    title: Text("Emergency Announcement"),
+    content: Text("There has been a reporting of a fire developing at Bishan street 12 blk 411. Please stay away!"),
+    actions: [
+      cancelButton,
+      continueButton,
+    ],
+  );
+
+  // show the dialog
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return alert;
+    },
+  );
+}
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(' Help Lah!',style: TextStyle(fontSize: 30,
+        backgroundColor: Colors.red,
+        title: Text(' SmartGuard',style: TextStyle(fontSize: 30,
             fontFamily: 'ChelseaMarkeet'
         ),),
         centerTitle: true,
-        backgroundColor: Colors.red,
+
       ),
 
 
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Container(
+            height: 25.0,
+            margin: EdgeInsets.all(1),
+            child: RaisedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/helplist');
+              },
+              padding: EdgeInsets.all(0.0),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(75.0)),
+              child: Ink(
+                decoration: BoxDecoration(
+                    gradient: LinearGradient(colors: [Color(0xffbf360c), Color(0xffffab91)],
+
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
+                    ),
+                    borderRadius: BorderRadius.circular(28.0)
+                ),
+                child: Container(
+                  constraints: BoxConstraints(maxWidth: 500.0, minHeight: 60.0),
+                  alignment: Alignment.center,
+                  child: FlatButton.icon(
+                    label: Container(
+
+                      child: Text('Emergency: Fire developing at Block 411 void deck!',style: TextStyle(fontSize: 12,color: Colors.white),),
+                    ),
+                    icon: Icon(Icons. add_alert,color: Colors.white,size: 15,),
+                    onPressed: () {
+                      showAlertDialog(context);
+                    },
+                  ),
+                ),
+
+              ),
+            ),),
+          Container(
             width: MediaQuery.of(context).size.width,
-            height: 400,
+            height: 290,
             decoration: BoxDecoration(
               image: DecorationImage(
                   fit: BoxFit.fill,
-                  image: AssetImage('assets/loading1.jpg')
+                  image: AssetImage('assets/scdf.jpg')
               ),
             ),
           ),
-          Container(
-            color: Colors.red[500],
-            padding:EdgeInsets.all(10.0),
-            child: FlatButton.icon(
-              label: Container(
 
-                child: Text('HELP YOURSELF ( Covid Checklist)                ',style: TextStyle(fontSize: 15,color: Colors.white),),
-              ),
-              icon: Icon(Icons. playlist_add_check,color: Colors.white,),
+
+          Container(
+            height: 52.0,
+            margin: EdgeInsets.all(15),
+            child: RaisedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/helplist');
 
               },
-            ),
+              padding: EdgeInsets.all(0.0),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(75.0)),
+              child: Ink(
+                decoration: BoxDecoration(
+                    gradient: LinearGradient(colors: [Color(0xffb71c1c), Color(0xffef9a9a)],
 
-          ),
-          Container(
-            color: Colors.red[400],
-            padding:EdgeInsets.all(10.0),
-            child: FlatButton.icon(
-              label: Container(
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
+                    ),
+                    borderRadius: BorderRadius.circular(28.0)
+                ),
+                child: Container(
+                  constraints: BoxConstraints(maxWidth: 380.0, minHeight: 60.0),
+                  alignment: Alignment.center,
+                  child: FlatButton.icon(
+                    label: Container(
 
-                child: Text('HELP YOUR NEIGHBOR ( Voluntary Task )      ',style: TextStyle(fontSize: 15,color: Colors.white),),
+                      child: Text('Check for potential hazards',style: TextStyle(fontSize: 20,color: Colors.white),),
+                    ),
+                    icon: Icon(Icons.update,color: Colors.white,size: 25,),
+                    onPressed: () {
+
+                      Navigator.pushNamed(context, '/connectio');
+
+                    },
+                  ),
+                ),
               ),
-              icon: Icon(Icons. people_outline,color: Colors.white,),
-              onPressed: () {
-                Navigator.pushNamed(context, '/helpneighbour');
-              },
-            ),
-
-          ),
+            ),),
           Container(
-            color: Colors.red[300],
-            padding:EdgeInsets.all(9.5),
-            child: FlatButton.icon(
-              label: Container(
-
-                child: Text('HELP SINGAPORE (Covid Hotspot&Trace)',style: TextStyle(fontSize: 15,color: Colors.white),),
-              ),
-              icon: Icon(Icons. wifi_tethering,color: Colors.white,),
+            height: 52.0,
+            margin: EdgeInsets.all(15),
+            child: RaisedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/helpsing');
-              },
-            ),
+                Navigator.pushNamed(context, '/helplist');
 
-          ),
+              },
+              padding: EdgeInsets.all(0.0),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(75.0)),
+              child: Ink(
+                decoration: BoxDecoration(
+                    gradient: LinearGradient(colors: [Color(0xffb71c1c), Color(0xffef9a9a)],
+
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
+                    ),
+                    borderRadius: BorderRadius.circular(28.0)
+                ),
+                child: Container(
+                  constraints: BoxConstraints(maxWidth: 280.0, minHeight: 60.0),
+                  alignment: Alignment.center,
+                  child: FlatButton.icon(
+                    label: Container(
+
+                      child: Text('Report an incident.',style: TextStyle(fontSize: 20,color: Colors.white),),
+                    ),
+                    icon: Icon(Icons. remove_red_eye,color: Colors.white,size: 25,),
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/upload');
+                    },
+                  ),
+                ),
+
+              ),
+            ),),
+          Container(
+            height: 52.0,
+            margin: EdgeInsets.all(15),
+            child: RaisedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/helplist');
+
+              },
+              padding: EdgeInsets.all(0.0),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(75.0)),
+              child: Ink(
+                decoration: BoxDecoration(
+                    gradient: LinearGradient(colors: [Color(0xffb71c1c), Color(0xffef9a9a)],
+
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
+                    ),
+                    borderRadius: BorderRadius.circular(28.0)
+                ),
+                child: Container(
+                  constraints: BoxConstraints(maxWidth: 200, minHeight: 60.0),
+                  alignment: Alignment.center,
+                  child: FlatButton.icon(
+                    label: Container(
+
+                      child: Text('Call for help',style: TextStyle(fontSize: 20,color: Colors.white),),
+                    ),
+                    icon: Icon(Icons.call,color: Colors.white,size: 25,),
+                    onPressed: () {
+
+                      Navigator.pushNamed(context, '/call');
+
+
+                    },
+                  ),
+                ),
+              ),
+            ),),
 
 
 
@@ -168,7 +302,20 @@ class _HomeState extends State<Home> {
 //        label: Text('Check me out'),
 //
 //      ),
+        floatingActionButton: FlatButton.icon(
+
+          onPressed: () {
+            Navigator.pushNamed(context, '/helpsing');
+          },
+
+          label: Text('',style: TextStyle(fontSize: 5,letterSpacing: 1.0,color: Colors.white,fontFamily: 'ChelseaMarkeet',)),
+          icon: Icon(Icons.info,color: Colors.black,size: 40,),
+          color: Colors.white,
+          padding: EdgeInsets.all(10.0),
+          shape: CircleBorder(),
+        )
 
     );
+
   }
 }
